@@ -233,7 +233,6 @@ import { Component, Vue, Prop, Watch } from "vue-property-decorator";
 
 import { Editor, EditorContent, AnyExtension } from "@tiptap/vue-2";
 import TiptapKit from "../plugins/tiptap-kit";
-//import vuetify from "../plugins/vuetify";
 
 import debounce from 'debounce';
 
@@ -321,6 +320,7 @@ export default class extends Vue {
   }
 
   created() {
+
     this.editor = new Editor({
       content: this.value,
       editorProps: {
@@ -521,9 +521,9 @@ export default class extends Vue {
 
     const EmojiPickerComponent = Vue.extend(EmojiPicker);
     const instance: any = new EmojiPickerComponent({
-      //vuetify: vuetify,
       propsData: {
         dark: this.dark,
+        light: !(this.dark)
       },
     });
 

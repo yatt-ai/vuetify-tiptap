@@ -8,6 +8,7 @@
     absolute
     :close-on-content-click="false"
     :dark="dark"
+    :light="light"
   >
     <VEmojiPicker
       :labelSearch="'search'"
@@ -33,6 +34,7 @@ export default class extends Vue {
   @Prop() readonly activator: any;
 
   @Prop({ default: false }) readonly dark: boolean;
+  @Prop({ default: true }) readonly light: boolean;
 
   absoluteX = 0;
 
