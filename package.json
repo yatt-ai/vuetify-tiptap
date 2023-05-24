@@ -1,6 +1,6 @@
 {
   "name": "@yatt-ai/vuetify-tiptap",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "description": "Awesome and extendable rich text editor component for Vuetify projects using tiptap",
   "homepage": "https://github.com/yatt-ai/vuetify-tiptap",
